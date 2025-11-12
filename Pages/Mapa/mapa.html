@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Author" content="Ivan">
+    <meta name="Description" content="Paginas de prueba">
+    <meta name="Keywords" content="HTML, CSS, JavaScript, SQL, PHP, jQuery, XML,DOM,Bootstrap,Python">
+   <link rel="shortcut icon" href="./Recursos/favicon.png"  type="image/x-icon">
+</head>
+<body>
+    <h2>Mapa del mundo</h2>
+<p>Haz clic en España para ver una imagen de España. <br>Haz clic en Portugal para ver una imagen de Portugal.
+<br>Haz clic en Francia Para ver una imagen de Francia.<br>Haz clic en las Islas Baleares para ver una imagen de las Islas Baleares.<br>
+Haz clic en Marruecos para ver una imagen de Marruecos</p>
+
+<img src="./Recursos/Mapa.jpg" alt="Mapamundi" usemap="#MapaMundi">
+
+<map name="#MapaMundi">
+  <area shape="poly" coords="160,100,225,100,255,375,450,400,660,80,180,0" alt="España" href="./Paginas/España.html">
+  <area shape="rect" coords="160,100,225,375" alt="Portugal" href="./Paginas/Portugal.html">
+  <area shape="rect" coords="470,0,660,80" alt="Francia" href="./Paginas/Francia.html">
+  <area shape="circle" coords="670,230,50" alt="Baleares" href="./Paginas/Baleares.html">
+  <area shape="rect" coords="260,450,330,490" alt="Marruecos" href="./Paginas/Marruecos.html">
+</map>
+
+</body>
+</html>

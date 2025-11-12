@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de estilos</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Author" content="Ivan">
+    <meta name="Description" content="Paginas de prueba">
+    <meta name="Keywords" content="HTML, CSS, JavaScript, SQL, PHP, jQuery, XML,DOM,Bootstrap,Python">
+   <link rel="shortcut icon" href="./../Recursos/favicon.png"  type="image/x-icon">
+    <style>
+        #UltimoParrafo{
+            background-color: beige;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        p{ 
+            color: green;
+            background-color: aquamarine;
+            font-size: 22px;
+        }
+        p, span{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <p style="color: red;">
+         Cuando hablamos de <span style="text-decoration:line-through; font-size: 30px;">HTML</span>, nos referimos a un lenguaje que no es propiamente de programación, sino de marcado, ya que su principal objetivo es estructurar y organizar el contenido. Este contenido, en su forma más básica, puede consistir en texto, imágenes, videos, enlaces y otros elementos multimedia.
+    </p>
+     <p>
+         CSS, o Hojas de Estilo en Cascada, es un lenguaje de estilos que define la apariencia de los documentos HTML, como el color, la fuente, el tamaño, la posición y el diseño de una página web. Separa la estructura del contenido (HTML) de su presentación, lo que permite a los desarrolladores y diseñadores crear sitios web visualmente atractivos y consistentes, facilitando el mantenimiento y la flexibilidad del diseño. 
+    </p>
+    <p id="UltimoParrafo" style="border: 5px solid black; background-color: blueviolet;">
+         Cuando hablamos de HTML, nos referimos a un lenguaje que no es propiamente de programación, sino de marcado, ya que su principal objetivo es estructurar y organizar el contenido. Este contenido, en su forma más básica, puede consistir en texto, imágenes, videos, enlaces y otros elementos multimedia.
+    </p>
+    <div class="wrap">
+<section class="card">
+<iframe
+class="calendar-frame"
+src="https://calendar.google.com/calendar/embed?src=CALENDAR_ID&ctz=Europe%2FMadrid&mode=MONTH&showTitle=0&showPrint=0&showTabs=0&showCalendars=0"
+title="Calendario de Google"
+aria-label="Calendario de Google embebido"
+loading="lazy">
+</iframe>
+</section>
+<aside class="right">
+<div class="card translator">
+<h2 style="margin:0 0 8px 0;font-size:1rem">Traducir esta página</h2>
+<div id="google_translate_element"></div>
+</div>
+<div class="card">
+</div>
+</aside>
+</div>
+<script>
+function googleTranslateElementInit() {
+new google.translate.TranslateElement({
+pageLanguage: 'es', 
+layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+}, 'google_translate_element');
+}
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
